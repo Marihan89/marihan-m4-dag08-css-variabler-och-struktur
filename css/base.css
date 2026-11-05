@@ -1,0 +1,68 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*---------------------------- Body------------------- */
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--space-2);
+    line-height: 1.6;
+    margin: 0;
+    color: var(--color-body-text);
+    background-color: var(--color-bg);
+}
+
+/*---------------------------- Headings------------------- */
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    color: var(--color-headings);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 {
+    color: var(--color-headfoot-text);
+    font-size: 1.75rem;
+}
+
+header h1 {
+    margin: 0 0 var(--space-1);
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 0 0 var(--space-2);
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: calc(var(--space-1) * 1.5) 0 var(--space-1);
+}
+/*---------------------------Links------------------ */
+a {
+    color: var(--color-link-text);
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+nav a {
+    color: var(--color-nav-menu);
+}
+
+footer a {
+    color: var(--color-headfoot-text);
+}
+
+nav a {
+    font-weight: 600;
+}
