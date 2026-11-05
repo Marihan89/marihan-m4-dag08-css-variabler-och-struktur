@@ -1,0 +1,47 @@
+:root {
+    /* page variables */
+
+    /*---------------------------- Colors------------------- */
+    --color-bg: #fffaf3;
+    --color-primary: #5b3a29;
+    --color-body-text: #222222;
+    --color-hero-bg: #f3e3cf;
+
+    /* Heading */
+    --color-headings: #3b2418;
+
+    /* Footer and header */
+    --color-headfoot-text: #ffffff;
+    --color-footer-bg: #2b1c14;
+    --color-link-text: #8c1010;
+    --color-link-hover: #5e0a0a;
+    --color-nav-menu: #ffffff;
+
+    /* article variables */
+    --color-article-border: #e3d5c3;
+    --color-article-bg: #ffffff;
+    --color-article-price: #8c1010;
+
+    /* Buttons */
+    --color-btn-bg: #8c1010;
+    --color-btn-text: #ffffff;
+    --color-btn-hover: #6f0c0c;
+
+    /* Form */
+    --color-fieldset-border: #e3d5c3;
+    --color-focus: #1a73e8;
+    --color-field-border: #8a7a6a;
+
+    /*---------------------------- Fonts------------------- */
+    --font-body:
+        Arial, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: Georgia, 'Times New Roman', serif;
+
+    /*---------------------------- Spacing------------------- */
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+}
