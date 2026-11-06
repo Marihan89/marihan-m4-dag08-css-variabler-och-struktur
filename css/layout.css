@@ -1,0 +1,113 @@
+/* Header, main, footer, grid and flex for page structure, media queries for layout */
+
+/*---------------------------- Header ------------------- */
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-headfoot-text);
+    padding: var(--space-2) var(--space-3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-1) var(--space-3);
+}
+
+/*---------------------------- Main  ------------------- */
+
+main {
+    padding: var(--space-3);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: calc(var(--space-1) * 2.5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: calc(var(--space-2) * 2.5);
+}
+
+#hero {
+    background-color: var(--color-hero-bg);
+    padding: var(--space-4) var(--space-3);
+    border-radius: var(--space-1);
+}
+
+#hero p {
+    font-size: 1.125rem;
+    max-width: 60ch;
+}
+/*---------------------------- Footer ------------------- */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-2);
+    background-color: var(--color-footer-bg);
+    color: var(--color-headfoot-text);
+    padding: var(--space-3);
+}
+
+address {
+    font-style: normal;
+}
+
+/*---------------------------- Grids ------------------- */
+.meny-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: calc(var(--space-1) * 2.5);
+}
+
+.meny-lista article {
+    margin-bottom: 0;
+}
+
+#om-oss {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-1) var(--space-4);
+}
+
+#om-oss h2 {
+    grid-column: 1 / -1;
+}
+
+/*---------------------------- Media Queries ------------------- */
+
+@media (min-width: 600px) {
+    main {
+        padding: var(--space-4);
+    }
+
+    #hero {
+        padding: calc(var(--space-4) * 1.75) calc(var(--space-2) * 2.5);
+    }
+
+    #hero h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 900px) {
+    #om-oss {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    #om-oss img {
+        grid-row: 2 / span 2;
+        grid-column: 2;
+    }
+
+    header {
+        padding: calc(var(--space-1) * 2.5) var(--space-5);
+    }
+}
