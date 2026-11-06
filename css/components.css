@@ -1,0 +1,89 @@
+/* Button, card, form, hero: reusable parts */
+
+/*---------------------------- Buttons------------------- */
+
+.knapp {
+    display: inline-block;
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
+    padding: calc(var(--space-1) * 1.5) calc(var(--space-1) * 2.5);
+    border: 0;
+    border-radius: calc(var(--space-1) * 0.75);
+    text-decoration: none;
+}
+
+.knapp:hover {
+    background-color: var(--color-btn-hover);
+}
+
+/*---------------------------- Cards ------------------- */
+article {
+    background-color: var(--color-article-bg);
+    border: 1px solid var(--color-article-border);
+    border-radius: var(--space-1);
+    padding: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+article .pris {
+    margin-top: auto;
+}
+
+.pris {
+    font-weight: 700;
+    color: var(--color-article-price);
+}
+
+/*---------------------------- Form ------------------- */
+
+fieldset {
+    border: 1px solid var(--color-fieldset-border);
+    border-radius: var(--space-1);
+    margin: 0 0 var(--space-2);
+    padding: calc(var(--space-1) * 1.5) var(--space-2);
+}
+
+legend {
+    font-weight: 700;
+    padding: 0 var(--space-1);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='date'],
+select,
+textarea {
+    width: 100%;
+    max-width: 28rem;
+    padding: 10px calc(var(--space-1) * 1.5);
+    border: 2px solid var(--color-field-border);
+    border-radius: calc(var(--space-1) * 0.75);
+    font: inherit;
+}
+
+.falt,
+.val {
+    margin-bottom: var(--space-2);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: calc(var(--space-1) * 0.5);
+}
+
+.val label {
+    display: inline;
+    font-weight: 400;
+    margin-left: var(--space-1);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
