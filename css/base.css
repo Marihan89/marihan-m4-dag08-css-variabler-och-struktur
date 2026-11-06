@@ -66,3 +66,12 @@ footer a {
 nav a {
     font-weight: 600;
 }
+
+/*---------------------------Images------------------ */
+
+article img,
+#om-oss img {
+    max-width: 100%;
+    height: auto;
+    border-radius: calc(var(--space-1) * 0.5);
+}
